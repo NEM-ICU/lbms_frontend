@@ -1,0 +1,49 @@
+/* AddBook.css */
+
+.add-book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto; /* Center horizontally */
+  margin-top: 5vh; /* Reduce top margin */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.add-book-input {
+  width: 100%; /* Match input width to form width */
+  padding: 8px; /* Increase padding for larger input fields */
+  font-size: 18px; /* Increase font size for larger input fields */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px; /* Add spacing between inputs */
+}
+
+.add-book-submit {
+  width: 100%; /* Match button width to form width */
+  padding: 12px;
+  color: #fff;
+  background-color: #0f172a; /* Match navbar color */
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-book-submit:hover {
+  background-color: #0c1422; /* Slightly darker on hover */
+}
+
+@media screen and (max-width: 600px) {
+  .add-book-container {
+    width: 90%;
+  }
+}

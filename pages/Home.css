@@ -10,19 +10,20 @@
   max-width: 1280px;
   margin: 20px auto;
   justify-content: center;
-  align-items: center;
 }
 
 .book {
   flex-basis: calc(25% - 40px);
   max-width: calc(25% - 40px);
+  text-align: center; /* Center align the content within each book */
 }
 
 .book img {
-  width: 100%;
-  height: auto;
+  width: 250px; /* Set a slightly larger fixed width */
+  height: 375px; /* Set a slightly larger fixed height */
   object-fit: cover;
   background-color: aquamarine;
+  margin: 0 auto; /* Center the image horizontally */
 }
 
 .book h2 {
@@ -54,5 +55,28 @@
   .book {
     flex-basis: calc(100% - 40px);
     max-width: calc(100% - 40px);
+  }
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.search-bar input {
+  width: 97%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 600px) {
+  .search-bar {
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 }

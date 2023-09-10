@@ -1,0 +1,55 @@
+/* Profile.css */
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto; /* Center horizontally */
+  margin-top: 5vh; /* Reduce top margin */
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.profile-section {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.profile-section h3 {
+  margin-bottom: 10px;
+}
+
+.profile-books {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.profile-books li {
+  margin-bottom: 10px;
+}
+
+.profile-books span {
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .profile-container {
+    width: 90%;
+  }
+}

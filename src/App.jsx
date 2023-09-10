@@ -5,6 +5,7 @@ import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Profile from "../pages/Profile";
 import AddBook from "../pages/AddBook";
+import BookPreview from "../components/BookPreview";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/add" element={<AddBook />} />
+        <Route path="/preview" element={<BookPreview />} />
       </Routes>
     </>
   );
